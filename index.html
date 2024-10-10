@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaire Diary</title>
+    <!-- daisy ui -->
+     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main>
+        <div class="main flex">
+
+            <!-- left side -->
+            <div class="navbar w-1/4 h-full  bg-blue-950 p-9 flex flex-col fixed">
+                <a href="#" class="w-full">
+                    <img src="images/logo/logo.png" alt="logo" class="w-2/3 mx-auto">
+                </a>
+                <div class="text-xl w-full text-center text-blue-950 font-bold bg-slate-300 hover:text-slate-300 hover:bg-blue-950 py-6 px-4 border border-slate-300 cursor-pointer rounded-xl mt-14">Show All Billionaire</div>
+                <div class="text-xl w-full text-center text-blue-950 font-bold bg-slate-300 hover:text-slate-300 hover:bg-blue-950 py-6 px-4 border border-slate-300 cursor-pointer rounded-xl mt-6">Richest By Industries</div>
+                <div class="text-xl w-full text-center text-blue-950 font-bold bg-slate-300 hover:text-slate-300 hover:bg-blue-950 py-6 px-4 border border-slate-300 cursor-pointer rounded-xl mt-6">Richest By State</div>
+                <div class="text-xl w-full text-center text-blue-950 font-bold bg-slate-300 hover:text-slate-300 hover:bg-blue-950 py-6 px-4 border border-slate-300 cursor-pointer rounded-xl mt-6">Sort By Rank</div>
+                <div class="text-xl w-full text-center text-blue-950 font-bold bg-slate-300 hover:text-slate-300 hover:bg-blue-950 py-6 px-4 border border-slate-300 cursor-pointer rounded-xl mt-6">Calculate Entire Wealth</div>
+            
+            </div>
+
+            <!-- right side -->
+            <div class="maindiv w-3/4 left-1/4 relative">
+                <div class="header h-28 bg-slate-300 py-16 px-24 w-full flex items-center justify-end">
+                    <img src="images/logo/logo1.png" alt="logo 2" class="float-end w-14">
+                </div>
+
+                <!-- table start -->
+                <div class="overflow-x-auto mt-14 px-9">
+                    <table class="table">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Citizenship</th>
+                          <th>Industry</th>
+                          <th>Rank</th>
+                          <th>Wealth</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                          <td>
+                            <div class="flex items-center gap-3">
+                              <div class="avatar">
+                                <div class="mask mask-squircle h-12 w-12">
+                                  <img
+                                    src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                                    alt="Avatar Tailwind CSS Component" />
+                                </div>
+                              </div>
+                              <div>
+                                <div class="font-bold">Hart Hagerty</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>United State</td>
+                          <td>Technology</td>
+                          <td>3</td>
+                          <td>$124317</td>
+                          <th>
+                            <button class="btn btn-ghost btn-xs">Details</button>
+                          </th>
+                        </tr>
+                      
+                    </table>
+                </div>
+
+
+                 <!-- modal -->
+                <div class="hidden w-4/5 text-center px-12 py-10 border rounded-xl shadow-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-white">
+                    <h1 class="font-bold text-3xl text-blue-950 p-6">Josah rich</h1>
+                    <p class="px-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati aliquid illo eligendi. 
+                        Placeat impedit tenetur, omnis saepe quam eligendi fugit autem sequi perferendis recusandae doloribus hic 
+                        illum amet nemo quidem.</p>
+                    <div class="flex justify-center items-center gap-6">
+                        <div class="overflow-hidden"><img src="images/icons/mouse-pointer.png" alt=""></div>
+                        <div class="text-start">
+                            <h2 class="mt-8 font-bold">General Information</h2>
+                            <div class="divider"></div>
+                            <h2>Citizenship: United State</h2>
+                            <h2>State: Washingto</h2>
+                            <h2>Cite: Medi</h2>
+                            <h2>Birth-Date: January 12, 1964</h2>
+                            <h2>Gender: M</h2>
+                            <h2 class="mt-8 font-bold">Financial Information</h2>
+                            <div class="divider"></div>
+                            <h2>Exchange: NASDAQ</h2>
+                            <h2>Ticker: AMZN-US</h2>
+                            <h2>Total Shares: 992634000</h2>
+                            <h2>Share Price: $99.7</h2>
+                        </div>
+                    </div>
+
+                    <button class="w-full py-4 bg-blue-950 rounded-full text-center text-slate-300 mt-10">Close</button>
+                </div>
+
+                <!-- card -->
+
+                <div class="hidden grid-cols-2 gap-6 my-10 mx-9"> <!--grid-->
+                    <!-- card-1 -->
+                    <div class="bg-base-100 w-full shadow-xl p-4">
+                        <h2 class="text-2xl font-bold text-center my-6">Josef alice</h2>
+                        <div class="flex justify-center items-center gap-4">
+                            <div> 
+                                <img src="images/logo/logo1.png" alt="">
+                            </div>
+                            <div class="divider divider-horizontal"></div>
+                            <div class="">
+                            <p>Citizenship: United</p>
+                            <p>State: washington</p>
+                            <p>City: Medi</p>
+                            <p>Total Share: 992634</p>
+                            <p>Share Price: $99.7</p>
+                            </div>  
+                
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       
+
+    </main>
+
+
+
+    <!-- script file -->
+     <script src="apiFetch.js"></script>
+     <script src="feature.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
