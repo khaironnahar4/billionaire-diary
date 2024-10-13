@@ -1,2 +1,1 @@
-# Billionaire-Diary-resources
-
+# Billionaire-Diary
