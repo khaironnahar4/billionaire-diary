@@ -34,6 +34,9 @@ This project is a web-based application that interacts with an API to display an
 - ### HTML5/CSS3: 
 For building the structure and styling of the website.
 
+- ### DaisyUi and tailwind.css:
+For styling the website
+
 - ### JavaScript (ES6): 
 For the dynamic functionalities, including API calls, filtering, sorting, modal interactions, and total wealth calculations.
 ES6 and JavaScript Features
@@ -47,16 +50,14 @@ Utilized to dynamically inject data into the DOM when creating the HTML structur
 Example: `<div>${billionaire.name}</div>`.
 
 - #### Array Methods:
-- map(): Used to generate arrays of unique states and industries from the API data.
-- filter(): Applied to filter billionaires based on selected state or industry.
-- sort(): Used to sort the billionaire data in descending order by wealth.
-- reduce(): Employed to calculate the total wealth of all billionaires.
+  - map(): Used to generate arrays of unique states and industries from the API data.
+  - filter(): Applied to filter billionaires based on a selected state or industry.
+  - sort(): The billionaire data is sorted in descending order by wealth.
+  - reduce(): Employed to calculate the total wealth of all billionaires.
 
 - #### Destructuring:
 Simplified extraction of properties from objects, such as when accessing name, wealth, industry, and state from each billionaire object in the API response.
 
-- #### Modules (ES6 Import/Export):
-If applicable, the project may use JavaScript modules to organize code and reuse functionality across multiple files.
 
 - #### Promises and async/await:
 The project handles asynchronous API calls using fetch() and async/await for cleaner and more readable code.
@@ -82,5 +83,5 @@ cd billionaires-data-visualization
 
 
 ### License
-This project is open-source. Feel free to contribute or use it in your own projects.
+This project is open-source. Feel free to contribute or use it in your projects.
 
